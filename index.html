@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Word Scramble Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container cont" id="contan">
+    <h2>Word Scramble</h2>
+    <div class="content">
+      <p id="scrambleWord"></p>
+      <div class="details">
+        <p>Hint: <span id="hint"></span></p>
+        <p>Time Left: <b id="timer">30</b>s</p>
+      </div>
+      <input type="text" spellcheck="false" placeholder="Enter a valid word" id="inputWord" />
+      <div class="buttons">
+        <button id="refreshWord">Refresh Word</button>
+        <button id="checkWord" >Check Word</button>
+      </div>
+    </div>
+      </div>
+<!-- Alart the won -->
+<div class="alert alert-info mo alert-dismissible fade show AlertStyle "  id="won"tabindex="-1" role="alert">
+  <h2 class="text-center">Congratulations!</h2><hr>
+  <h2 class="text-center">You won</h2>
+  <div><button type="button" class="btn-close" id="closeAlertWon"aria-label="Close"></button></div>
+  <div class="justify-content-center bt">
+  <button type="button" class="btn btn-primary" id="playMore" >Play More</button></div>
+</div>
+<!-- Alart loss -->
+ <div class="alert alert-info mo alert-dismissible fade show  AlertStyle" id="loss" tabindex="-1" role="alert">
+  <h2 class="text-center">Sorry!</h2>
+  <hr>
+  <h2 class="text-center">You Lost</h2>
+  <div><button type="button" class="btn-close" id="closeAlertLoss" aria-label="Close"></button></div>
+  <div class="justify-content-center bt">
+    <button type="button" class="btn btn-primary" id="trayAgine">Tray Agine</button>
+  </div>
+</div> 
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="js/words.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
